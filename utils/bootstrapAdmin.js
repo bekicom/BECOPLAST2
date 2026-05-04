@@ -6,7 +6,7 @@ async function bootstrapAdmin() {
     .trim()
     .toLowerCase();
   const adminPassword = String(
-    process.env.BOOTSTRAP_ADMIN_PASSWORD || "123456",
+    process.env.BOOTSTRAP_ADMIN_PASSWORD || "0000",
   ).trim();
   const adminName = String(process.env.BOOTSTRAP_ADMIN_NAME || "Admin").trim();
   const adminPhone = String(
