@@ -56,6 +56,7 @@ exports.register = async (req, res) => {
       ok: true,
       message: "Ro‘yxatdan o‘tildi",
       user: {
+        _id: user._id,
         id: user._id,
         name: user.name,
         phone: user.phone,
@@ -121,6 +122,7 @@ exports.login = async (req, res) => {
       ok: true,
       token,
       user: {
+        _id: user._id,
         id: user._id,
         name: user.name,
         phone: user.phone,
